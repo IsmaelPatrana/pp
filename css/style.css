@@ -184,7 +184,7 @@ header{
 
  .modal_container_disable {
     transition: 1s;
-    transform: translateY(-100%);
+    transform: translateY(-200%);
     position: fixed;
     z-index: 1000;
     top: 0;
