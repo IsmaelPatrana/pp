@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ismael Pastrana</title>
+    <link rel="stylesheet" media="(max-width: 800px)" href="css/mobile.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontello.css">
+</head>
+<body>
+    <header>
+        <div class="container_header">
+            <div class="col_logo">
+                <h1>Ismael Pastrana</h1>
+            </div>
+            <div class="col_menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#">contact</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <!-- <a href="#">Disable</a> --> <span class="disable"> Disable</span> 
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <!-- primera seccion  -->
+        <section>
+            <div class="main_personal-info">
+                <div class="photo">
+                    <!-- <div class="circle"></div> -->
+                    <img src="assents/img/FaceApp_1660772449545.jpg" alt="">
+                </div>
+                <div class="text_info">
+                    <p>Hi, how are things!</p>
+                </div>
+                <div class="des_info">
+                    <p>I am a systems <span class="tex"> engineering student.</span></p>
+                </div>
+                <div class="pro_info">
+                    <p>Web ux/ui designer and developer</p>
+                </div>
+            </div>
+            <!-- botones de contacto -->
+            <div class="buttons_info">
+               <div class="contanct">
+                <button id="open"><p>Contact</p></button>
+               </div> 
+               <div class="icons-contact">
+                <a href="#">
+                    <i class="icon icon-github"></i>
+                </a>
+                <a href="#">
+                    <i class="icon icon-linkedin"></i>
+                </a>
+                <a href="#">
+                    <i class="icon icon-facebook"></i>
+                </a>
+               </div>
+            </div>
+        </section>
+ 
+    </header>
+    <main>
+        <div class="modal_container_disable " id="togle_contact">
+            
+            <div class="modal">
+                <div class="cerrar">
+                    <i class="icon icon-cancel" id="close"></i>
+                </div>
+                <h1>SEND ME A CONTACT EMAIL</h1>
+                <form action="#" class="formulario_contacto">
+                    <label for="correo">Email</label>
+                    <input type="text" placeholder="Email" id="correo">
+                    <label for="Text">describe your needs</label>
+                    <textarea name="Text" id="Text" cols="30" rows="10" placeholder="TEXT"></textarea>
+                    <button class="boton_modal" id="btn_modal">Enviar</button>
+                </form>
+            </div>
+        </div>
+        
+    </main> 
+    <script src="js/main.js"></script>
+</body>
+</html>

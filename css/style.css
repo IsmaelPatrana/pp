@@ -1,0 +1,288 @@
+/*fuente 1*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+/*fuente 2*/
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+:root {
+    --color1: #fcfc1f;
+    --color2: #008081;
+    --fuente: 'Poppins', sans-serif;
+    --fuente2:'Silkscreen', cursive;
+}
+
+header{
+    background: #373B44;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #4286f4, #373B44);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #4286f4, #373B44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    height: 100vh;
+
+}
+
+
+
+    /*Header styles*/
+.container_header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+        /*LOGO*/
+.col_logo h1 {
+    margin-left: 100px;
+    color: white;
+    font-family: var(--fuente);
+}
+        /*NAV*/
+.col_menu nav ul {
+    display: flex;
+    list-style: none;
+}
+.col_menu nav ul li > a {
+    text-decoration: none;
+    color: black;
+}
+.col_menu nav ul li > a:hover {
+    text-decoration: underline;
+    color: var(--color1);
+}
+.col_menu nav ul li {
+    margin: 10px;
+    font-family: var(--fuente2);
+}
+ 
+ /*////////////Main///////////////*/
+ .main_personal-info {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+ }
+ 
+ /*circle temporal*/
+ .circle {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: #02208081;
+ }
+ 
+ .photo img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 13px 46px -6px rgba(0,0,0,0.71);
+    -moz-box-shadow: 0px 13px 46px -6px rgba(0,0,0,0.71);
+    box-shadow: 0px 13px 46px -6px rgba(0,0,0,0.71);
+ }
+ .text_info {
+    display: block;
+ }
+
+ /*textos informacion personal*/
+
+ .text_info p {
+   margin-top: 20px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: var(--fuente2); 
+    display: block;
+
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 17ch;
+    animation: typing 2s steps(12), blink .5s infinite step-end alternate;
+    overflow:hidden;
+ }
+
+ @keyFrames typing {
+ 
+ from { width: 0}
+ }
+ 
+ @keyFrames blink {
+  50% { border-color: transparent}
+ }
+
+
+ .des_info p{
+    color: white;
+    font-size: 35px;
+    font-family: var(--fuente);
+    font-weight: 700;
+ }
+ .tex {
+    color: var(--color1);
+ }
+
+ .pro_info p{
+    color: white;
+    font-family: var(--fuente);
+    font-weight: 700;
+ }
+
+ /* Botones de contacto */
+ .buttons_info {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+ .contanct button{
+    margin-top: 0.5rem;
+    display: block;
+    width: 150px;
+    height: 50px;
+    background-color: var(--color1);
+    border-radius: 10px;
+    transition: 0.2s;
+ }
+ .contanct button:hover{
+    margin-top: 0rem;
+    width: 160px;
+    height: 60px;
+    font-size: 16px;
+    transition: 0.3s;
+ }
+ .contanct button p {
+    font-family: var(--fuente2);
+    font-weight: 700;
+    
+ }
+ /* iconos */
+ .icons-contact {
+    margin-top: 10px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+ }
+ .icons-contact a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+   
+ }
+ .icons-contact a:hover{
+    color: var(--color1);
+ }
+
+
+
+
+/*/////////////////////////////Funcionalidades/////////////////////*/
+ .disable {
+    color: rgb(81, 93, 97);
+ }
+
+/*FORMULARIO DE CONTACTO EN VENTANA MODAL*/
+
+ .modal_container_disable {
+    transition: 1s;
+    transform: translateY(-100%);
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgba(0,0,0,0.71);  */
+ }
+
+ .modal_container {
+   position: fixed;
+   z-index: 1000;
+   top: 0;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(0,0,0,0.71); 
+   transition: 1s;
+   transform: translateY(0%);   
+}
+ .modal{
+    width: 60%;
+    height: 70vh;
+    background-color: var(--color2);
+    font-family: var(--fuente2);
+    border-radius: 50px;
+ }
+
+ .modal h1{
+   margin-top: 0px;
+   color: #fcfc1f;
+   text-align: center;
+   font-family: var(--fuente2);
+ }
+
+ .modal .cerrar .icon {
+    color: var(--color1)
+ }
+ .modal .cerrar .icon:hover {
+    color: #373B44;
+ }
+
+ .modal .cerrar  {
+   width: 100%;
+   display: flex;
+   justify-content: flex-end;
+ }
+ .modal .cerrar i {
+    margin: 30px;
+    font-size: 30px;
+ }
+
+
+ .modal .formulario_contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+ }
+
+ .modal .formulario_contacto input {
+    width: 300px;
+    height: 30px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 6px;
+ }
+ .modal .formulario_contacto label {
+    font-size: 18px;
+    color: #fcfc1f;
+    margin: 10px;
+ }
+
+ .modal .formulario_contacto textarea {
+    width: 300px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    border-radius: 6px;
+ }
+
+ .boton_modal {
+    margin-top: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--color1);
+    font-family: var(--fuente2);
+ }
+ .boton_modal:hover{
+    background-color: black;
+    border: 2px solid #fcfc1f;
+    color: white;
+ }

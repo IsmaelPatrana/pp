@@ -1,0 +1,41 @@
+/* LOGO Y NAV DEL HEADER VISTA MOBILE */
+
+.container_header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.container_header .col_logo {
+    width: 100%;
+    text-align: center;
+}
+.container_header .col_logo h1 {
+    margin: 0%;
+}
+.container_header .col_menu {
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.container_header .col_menu nav ul li {
+    padding: 0%;
+    margin: 0px 5px;
+    text-align: center;
+}
+.disable {
+    display: none;
+}
+
+/* SECCION DE INFORMACION PERSONAL */
+
+.main_personal-info .photo img {
+    width: 200px;
+    height: 200px;
+}
+
+.main_personal-info .des_info{
+    text-align: center;
+}
