@@ -206,7 +206,7 @@ header{
    justify-content: center;
    align-items: center;
    background-color: rgba(0,0,0,0.71); 
-   transition: 1s;
+   transition: 0.5s;
    transform: translateY(0%);   
 }
  .modal{

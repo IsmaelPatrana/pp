@@ -34,8 +34,19 @@
 .main_personal-info .photo img {
     width: 200px;
     height: 200px;
+    box-shadow: none;
 }
 
 .main_personal-info .des_info{
     text-align: center;
 }
+
+
+/*VENTANA MODAL*/  
+.modal_container .modal{
+    width: 80%;
+    height: 70vh;
+    background-color: var(--color2);
+    font-family: var(--fuente2);
+    border-radius: 20px;
+ }
