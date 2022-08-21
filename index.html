@@ -79,12 +79,14 @@
                     <i class="icon icon-cancel" id="close"></i>
                 </div>
                 <h1>SEND ME A CONTACT EMAIL</h1>
-                <form action="#" class="formulario_contacto">
+                <form action="https://formsubmit.co/7e1da7861763af9fea053ad127784e42" method="POST" class="formulario_contacto">
                     <label for="correo">Email</label>
-                    <input type="text" placeholder="Email" id="correo" required>
+                    <input type="text" placeholder="Email" id="correo" name="mail" required>
                     <label for="Text">describe your needs</label>
-                    <textarea name="Text" id="Text" cols="30" rows="10" placeholder="TEXT" required></textarea>
+                    <textarea id="Text" cols="30" rows="10" placeholder="TEXT" name="Text" required></textarea>
                     <button class="boton_modal" id="btn_modal">Enviar</button>
+                    <input type="hidden" name="_next" value="https://www.youtube.com/watch?v=OMOGaugKpzs&ab_channel=ThePoliceVEVO">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
             </div>
         </div>
