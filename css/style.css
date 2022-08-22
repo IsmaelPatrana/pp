@@ -1,7 +1,7 @@
 /*fuente 1*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
 /*fuente 2*/
-@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
 
 *{
     padding: 0%;
@@ -12,7 +12,7 @@
     --color1: #fcfc1f;
     --color2: #008081;
     --fuente: 'Poppins', sans-serif;
-    --fuente2:'Silkscreen', cursive;
+    --fuente2:'Silkscreen', sans-serif;
 }
 
 header{
